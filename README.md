@@ -44,6 +44,19 @@
     "weight": "500"
     }
 ```
-
+#### /update-user/[:user-id] (updating a user record)
+#### Payload Structure:
+```
+    {
+    "photo": [
+    {
+    "public_id": "n4t5ccur0shvzrnwlkoy",
+    "url": "https://res.cloudinary.com/tinkokooffice/image/upload/v1685421283/n4t5ccur0shvzrnwlkoy.jpg"
+    }
+    ],
+    "verificationMeans": "National ID"
+    "idNumber": "0257248879HGT"
+    }
+```
 
 
