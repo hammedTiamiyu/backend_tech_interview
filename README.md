@@ -83,7 +83,7 @@
 
 #### /get-user/[:user-name] (get a user record using the userName attribute )
 
-#### /update-user/[:user-id] (updating a user record)
+#### /update-user/[:id] (update a user record)
 #### Request Payload:
 ```
     {
@@ -181,6 +181,6 @@
 }
 ```
 
-#### SUBMISSION: Create a GitHub repo (which is to be forwarded to this email: Tinkokogroup101@gmail.com ) to document all the apis. This doucmentation should contain info like logic and created endpoint, payloads and http method for ecah api. You can reach us for more clarity or explanation at any point. This assessment is to be completed under 48 Hours.
+#### SUBMISSION: Create a GitHub repo (and the link is to be forwarded to this email: Tinkokogroup101@gmail.com ) to document all the apis. This doucmentation should contain neccessary info like the logic, api endpoint, payloads and http method for ecah api. You can reach us for more clarity or explanation at any point. This assessment is to be completed under 48 Hours.
 
 ### GOOD LUCK
