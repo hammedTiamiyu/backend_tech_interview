@@ -121,7 +121,7 @@
     }
 ```
 #### /list-product (get list of product; Limits=10)
-##### Use the seller_id attached to each product to get the seller info (i.e firstName, lastName, userName) which is then to be attached to the 
+##### Use the sellerId attached to each product to get the seller info (i.e firstName, lastName, userName) before returning the list
 #### Response Payload:
 ```
     {
@@ -166,8 +166,8 @@
             "productId": "632b604b0da9bd1d419a07db",
             "posterInfo": {
                 "role": "seller",
-                "firstName": "Yakubu",
-                "lastName": "Rimamnungra",
+                "firstName": "Ajayi",
+                "lastName": "Rafel",
                 "profilePicUrl": [
                 {
                     "url": "https://res.cloudinary.com/tinkokooffice/image/upload/v1663787065/1663787064948.jpg",
