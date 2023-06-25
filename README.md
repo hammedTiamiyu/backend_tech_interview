@@ -121,7 +121,7 @@
     }
 ```
 #### /list-product (get list of product; Limits=10)
-##### Use the sellerId attached to each product to get the seller info (i.e firstName, lastName, userName) before returning the list
+##### Use the sellerId attached to each product to get the seller info (i.e firstName, lastName, userName and profilePic) before returning the list
 #### Response Payload:
 ```
     {
