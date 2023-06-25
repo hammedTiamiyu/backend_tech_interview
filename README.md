@@ -58,5 +58,64 @@
     "idNumber": "0257248879HGT"
     }
 ```
-
+#### /list-product (get list of product; Limits=10)
+##### Use the seller_id attached to each product to get the seller info (i.e firstName, lastName, userName) which is then to be attached to t
+#### Payload Structure:
+```
+    {
+    "LastEvaluatedKey": {
+        "id": "633192b485f761e0d94b2bfd"
+    },
+    "statusCode": 200,
+    "length": 10,
+    "items": [
+        {
+            "productName": "Irish Potatoes",
+            
+            "category": "627cc5f7046919d2a6f2167d",
+            "createdAt": "1663787083980",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/tinkokooffice/image/upload/v1663787065/1663787064948.jpg",
+                    "public_id": "1663787064948"
+                }
+            ],
+            "sellerId": "632ab45bca9584f349e7f0e1",
+            "productId": "632b604b0da9bd1d419a07db",
+            "posterInfo": {
+                "role": "seller",
+                "firstName": "Yakubu",
+                "lastName": "Rimamnungra",
+                "profilePicUrl": "N/A"
+            }
+        },
+        {
+            "productName": "Brown Rabbit",
+            
+            "category": "627cc5f7046919d2a6f2167d",
+            "createdAt": "1663787083980",
+            "images": [
+                {
+                    "url": "https://res.cloudinary.com/tinkokooffice/image/upload/v1663787065/1663787064948.jpg",
+                    "public_id": "1663787064948"
+                }
+            ],
+            "sellerId": "632ab45bca9584f349e7f0e1",
+            "productId": "632b604b0da9bd1d419a07db",
+            "posterInfo": {
+                "role": "seller",
+                "firstName": "Yakubu",
+                "lastName": "Rimamnungra",
+                "profilePicUrl": [
+                {
+                    "url": "https://res.cloudinary.com/tinkokooffice/image/upload/v1663787065/1663787064948.jpg",
+                    "public_id": "1663787064948"
+                }
+            ],
+            }
+        }
+        
+    ]
+}
+```
 
