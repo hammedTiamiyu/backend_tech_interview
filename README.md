@@ -7,14 +7,13 @@
 ```
     {
     "activateUser": false,
-    "createdAt": "1667213189880",
     "currency": "NGN",
     "lastName": "Lamidi ",
     "email": "lamiditemitope31@email.com" ,
     "firstName": "Temitope ",
     "phone": "7043330737",
     "role": [buyer / seller],
-    "userId": "temi247",
+    "userName": "temi247",
     }
 ```
 #### Response Payload
@@ -33,12 +32,33 @@
     }
 ```
 
-
 #### /create-product (Creating a new product)
-#### Payload Structure:
+#### Request Payload:
 ```
     {
-    "id": "SaiUFv2oJurhMWq92VAesQKF", [pk]
+    "category": "627cc555046919d2a6f21662",
+    "city": "Abuja",
+    "count": 10,
+    "country": "Nigeria",
+    "description": "Banana Flavour Minimum Order Quantity - 10pcs",
+    "images": [
+    {
+    "public_id": "n4t5ccur0shvzrnwlkoy",
+    "url": "https://res.cloudinary.com/tinkokooffice/image/upload/v1685421283/n4t5ccur0shvzrnwlkoy.jpg"
+    }
+    ],
+    "price": "1000",
+    "productName": "L&Z Yoghurt ",
+    "quantity": 100,
+    "subCategory": "hLBxpm6XoCWvhQQdsmRjQPZL",
+    "sellerId": "634084c8fd2c16ba75c006e8",
+    "weight": "500"
+    }
+```
+#### Response Payload:
+```
+    {
+    "id": "SaiUFv2oJurhMWq92VAesQKF", [pk],
     "category": "627cc555046919d2a6f21662",
     "city": "Abuja",
     "count": 10,
@@ -59,11 +79,12 @@
     "weight": "500"
     }
 ```
-#### /get-user/[:user] (get a user record)
-#### Payload Structure:
+#### /get-user/[:id] (get a user record using the unique id )
+
+#### /get-user/[:user-name] (get a user record using the userName attribute )
 
 #### /update-user/[:user-id] (updating a user record)
-#### Payload Structure:
+#### Request Payload:
 ```
     {
     "photo": [
@@ -76,9 +97,32 @@
     "idNumber": "0257248879HGT"
     }
 ```
+#### Response Payload:
+```
+    {
+    "id" "h3fons893dfjg944ff" [partion key -pk]
+    "activateUser": false,
+    "createdAt": "1667213189880",
+    "currency": "NGN",
+    "lastName": "Lamidi ",
+    "email": "lamiditemitope31@email.com" ,
+    "firstName": "Temitope ",
+    "phone": "7043330737",
+    "role": [buyer / seller],
+    "userId": "temi247",
+    "photo": [
+    {
+    "public_id": "n4t5ccur0shvzrnwlkoy",
+    "url": "https://res.cloudinary.com/tinkokooffice/image/upload/v1685421283/n4t5ccur0shvzrnwlkoy.jpg"
+    }
+    ],
+    "verificationMeans": "National ID"
+    "idNumber": "0257248879HGT"
+    }
+```
 #### /list-product (get list of product; Limits=10)
 ##### Use the seller_id attached to each product to get the seller info (i.e firstName, lastName, userName) which is then to be attached to the 
-#### Payload Structure:
+#### Response Payload:
 ```
     {
     "LastEvaluatedKey": {
@@ -137,6 +181,6 @@
 }
 ```
 
-#### SUBMISSION: Create a GitHub repo (which is to be forwarded to this email: ) to document all the apis. This doucmentation should contain info like logic and created endpoint for ecah api. You can reach us for more clarity or explanation at any point. This assessment is to be completed under 48 Hours.
+#### SUBMISSION: Create a GitHub repo (which is to be forwarded to this email: Tinkokogroup101@gmail.com ) to document all the apis. This doucmentation should contain info like logic and created endpoint, payloads and http method for ecah api. You can reach us for more clarity or explanation at any point. This assessment is to be completed under 48 Hours.
 
-###
+### GOOD LUCK
