@@ -16,7 +16,9 @@
     "role": [buyer / seller],
     "userId": "temi247",
     }
-    Response Payload
+```
+#### Response Payload
+```
     {
     "id" "h3fons893dfjg944ff" [partion key -pk]
     "activateUser": false,
@@ -30,6 +32,7 @@
     "userId": "temi247",
     }
 ```
+
 
 #### /create-product (Creating a new product)
 #### Payload Structure:
