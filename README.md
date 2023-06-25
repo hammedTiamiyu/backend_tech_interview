@@ -3,10 +3,22 @@
 ### Using the aws lambda function,dynamodb and api gateway develop the following Rest api endpints:
 
 #### /create-user (Creating a new user)
-#### Payload Structure:
+#### Request Payload:
 ```
     {
-    "id": "635fa785a33f428f929919aa", [partion key -pk]
+    "activateUser": false,
+    "createdAt": "1667213189880",
+    "currency": "NGN",
+    "lastName": "Lamidi ",
+    "email": "lamiditemitope31@email.com" ,
+    "firstName": "Temitope ",
+    "phone": "7043330737",
+    "role": [buyer / seller],
+    "userId": "temi247",
+    }
+    Response Payload
+    {
+    "id" "h3fons893dfjg944ff" [partion key -pk]
     "activateUser": false,
     "createdAt": "1667213189880",
     "currency": "NGN",
@@ -44,6 +56,9 @@
     "weight": "500"
     }
 ```
+#### /get-user/[:user] (get a user record)
+#### Payload Structure:
+
 #### /update-user/[:user-id] (updating a user record)
 #### Payload Structure:
 ```
@@ -59,7 +74,7 @@
     }
 ```
 #### /list-product (get list of product; Limits=10)
-##### Use the seller_id attached to each product to get the seller info (i.e firstName, lastName, userName) which is then to be attached to t
+##### Use the seller_id attached to each product to get the seller info (i.e firstName, lastName, userName) which is then to be attached to the 
 #### Payload Structure:
 ```
     {
@@ -119,3 +134,6 @@
 }
 ```
 
+#### SUBMISSION: Create a GitHub repo (which is to be forwarded to this email: ) to document all the apis. This doucmentation should contain info like logic and created endpoint for ecah api. You can reach us for more clarity or explanation at any point. This assessment is to be completed under 48 Hours.
+
+###
